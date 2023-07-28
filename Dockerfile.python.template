@@ -41,7 +41,7 @@ WORKDIR /home/app/function/
 COPY function/requirements.txt  .
 
 RUN pip install -r requirements.txt --target=/home/app/python
-RUN python3 -m textblob.download_corpora
+# RUN python3 -m textblob.download_corpora
 RUN python3 -V
 WORKDIR /home/app/
 
