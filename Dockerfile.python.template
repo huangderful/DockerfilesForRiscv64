@@ -1,4 +1,4 @@
-FROM --platform=${TARGETPLATFORM:-linux/riscv64} huangderful:watchdog:latest as watchdog
+FROM --platform=${TARGETPLATFORM:-linux/riscv64} huangderful/openfaas-watchdog:latest as watchdog
 # FROM --platform=${TARGETPLATFORM:-linux/riscv64} riscv64/alpine:edge
 FROM riscv64/debian:sid
 
